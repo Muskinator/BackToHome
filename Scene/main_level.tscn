@@ -1,9 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://d14763eeahkyr"]
+[gd_scene load_steps=7 format=3 uid="uid://d14763eeahkyr"]
 
 [ext_resource type="Script" path="res://Scene/main_level.gd" id="1_asej1"]
 [ext_resource type="Texture2D" uid="uid://rp21pn48hup8" path="res://Background LVL/Lvl0.webp" id="1_pykdn"]
 
 [sub_resource type="SystemFont" id="SystemFont_rqwya"]
+font_names = PackedStringArray("Impact")
+
+[sub_resource type="SystemFont" id="SystemFont_nhl1d"]
+font_names = PackedStringArray("Impact")
+
+[sub_resource type="SystemFont" id="SystemFont_l06u4"]
+font_names = PackedStringArray("Impact")
+
+[sub_resource type="SystemFont" id="SystemFont_rq71a"]
 font_names = PackedStringArray("Impact")
 
 [node name="main_level" type="Control"]
@@ -43,7 +52,7 @@ theme_override_constants/margin_bottom = 12
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 120
+theme_override_constants/separation = 50
 
 [node name="séparation" type="Control" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -58,7 +67,7 @@ theme_override_constants/outline_size = 12
 theme_override_constants/shadow_outline_size = 0
 theme_override_fonts/font = SubResource("SystemFont_rqwya")
 theme_override_font_sizes/font_size = 50
-text = "LEVEL"
+text = "LEVELS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -76,7 +85,10 @@ layout_mode = 2
 
 [node name="Button_lvl_1" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_nhl1d")
+theme_override_font_sizes/font_size = 40
 text = "LEVEL 1"
 
 [node name="séparation" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
@@ -84,7 +96,10 @@ layout_mode = 2
 
 [node name="Button_lvl_2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_l06u4")
+theme_override_font_sizes/font_size = 40
 text = "LEVEL 2"
 
 [node name="séparation3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
@@ -92,5 +107,8 @@ layout_mode = 2
 
 [node name="Button_lvl_3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_rq71a")
+theme_override_font_sizes/font_size = 40
 text = "LEVEL 3"
