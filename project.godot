@@ -11,7 +11,9 @@ config_version=5
 [application]
 
 config/name="Back_to_home"
+run/main_scene="res://Scene/Lvl1.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
+boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 config/icon="res://icon.svg"
 
 [rendering]
