@@ -10,7 +10,7 @@ subpixel_positioning = 0
 script = ExtResource("1_ao00k")
 
 [node name="Panel" type="Panel" parent="."]
-top_level = true
+self_modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -20,6 +20,7 @@ offset_top = 26.0
 offset_right = -29.0
 offset_bottom = 101.0
 grow_horizontal = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="Menu" type="Button" parent="Panel"]
 texture_filter = 1
@@ -36,3 +37,4 @@ grow_horizontal = 0
 theme_override_fonts/font = SubResource("SystemFont_jyuyu")
 theme_override_font_sizes/font_size = 40
 text = "Menu"
+metadata/_edit_use_anchors_ = true

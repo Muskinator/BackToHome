@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bv5herxhodg57"]
+
+[ext_resource type="Script" path="res://Scene/Livre_Lvl2.gd" id="1_5n2me"]
+[ext_resource type="Texture2D" uid="uid://ywgiibra5m1i" path="res://Background LVL/livre.png" id="2_61ybd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ex4u2"]
+size = Vector2(215.5, 269.5)
+
+[node name="Livre_lvl2" type="Area2D"]
+script = ExtResource("1_5n2me")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1.99999, -2)
+scale = Vector2(12.3, 9.77)
+texture = ExtResource("2_61ybd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, 2)
+shape = SubResource("RectangleShape2D_ex4u2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

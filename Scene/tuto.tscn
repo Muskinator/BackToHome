@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://dt26ors8wl3fh" path="res://Assets/plateformes.webp" id="4_uksbg"]
 [ext_resource type="Texture2D" uid="uid://c0krfcx5cqrsa" path="res://Assets/Plate_violet.webp" id="5_ut3gh"]
 [ext_resource type="Texture2D" uid="uid://v5yp0aeb4ra4" path="res://Assets/dirt-violet.webp" id="6_n0mf3"]
-[ext_resource type="PackedScene" uid="uid://dcsieev058iy2" path="res://Scene/lvl_portal.tscn" id="7_ulysj"]
-[ext_resource type="PackedScene" uid="uid://cyfosqncqx6dn" path="res://Scene/button_menu.tscn" id="9_qbfq4"]
+[ext_resource type="PackedScene" uid="uid://dcsieev058iy2" path="res://Scene/lvl_portal_final.tscn" id="7_ulysj"]
+[ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/bouton_concept.tscn" id="9_ow3gx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
 texture = ExtResource("2_vmdlf")
@@ -321,6 +321,4 @@ zoom = Vector2(2, 2)
 [node name="Lvl_Portal" parent="." instance=ExtResource("7_ulysj")]
 position = Vector2(1902, -694)
 
-[node name="Button_menu" parent="." instance=ExtResource("9_qbfq4")]
-
-[node name="Button_menu2" parent="." instance=ExtResource("9_qbfq4")]
+[node name="Bouton_Concept" parent="." instance=ExtResource("9_ow3gx")]
