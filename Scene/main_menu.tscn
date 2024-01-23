@@ -93,4 +93,4 @@ layout_mode = 2
 [node name="Button_Exit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 texture_filter = 1
 layout_mode = 2
-text = "EXIT GAME"
+text = "EXIT"
