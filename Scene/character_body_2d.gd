@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 400.0
-const JUMP_VELOCITY = -450.0
+const JUMP_VELOCITY = -600.0
 @onready var sprite_2d = $Sprite2D
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -27,5 +27,5 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
-	var isLeft = velocity.x < 0
+	var isLeft = velocity.x > 0
 	sprite_2d.flip_h = isLeft
