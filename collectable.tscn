@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://b4thm7fxmqgj8"]
+
+[ext_resource type="Texture2D" uid="uid://bfrufrgllasqj" path="res://Assets/bois.png" id="1_qe2hh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nop73"]
+atlas = ExtResource("1_qe2hh")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r53t3"]
+atlas = ExtResource("1_qe2hh")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07nb5"]
+atlas = ExtResource("1_qe2hh")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5x1ms"]
+atlas = ExtResource("1_qe2hh")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfhf6"]
+atlas = ExtResource("1_qe2hh")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhbew"]
+atlas = ExtResource("1_qe2hh")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mp2vt"]
+atlas = ExtResource("1_qe2hh")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w38tf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nop73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r53t3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07nb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x1ms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sfhf6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhbew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mp2vt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4lxjd"]
+radius = 19.0
+
+[node name="Collectable" type="Area2D"]
+texture_filter = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w38tf")
+frame_progress = 0.470097
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -2)
+shape = SubResource("CircleShape2D_4lxjd")
