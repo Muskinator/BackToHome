@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b2s7qrtr5pa37"]
+[gd_scene load_steps=16 format=3 uid="uid://b2s7qrtr5pa37"]
 
 [ext_resource type="Texture2D" uid="uid://rp21pn48hup8" path="res://Background LVL/Lvl0.webp" id="1_uojgg"]
 [ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="2_vmdlf"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c0krfcx5cqrsa" path="res://Assets/Plate_violet.webp" id="5_ut3gh"]
 [ext_resource type="Texture2D" uid="uid://v5yp0aeb4ra4" path="res://Assets/dirt-violet.webp" id="6_n0mf3"]
 [ext_resource type="PackedScene" uid="uid://dcsieev058iy2" path="res://Scene/lvl_portal.tscn" id="7_ulysj"]
+[ext_resource type="PackedScene" uid="uid://cyfosqncqx6dn" path="res://Scene/button_menu.tscn" id="9_qbfq4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
 texture = ExtResource("2_vmdlf")
@@ -296,10 +297,10 @@ position = Vector2(1, -2)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = 5.0
-offset_top = -1325.0
-offset_right = 3635.0
-offset_bottom = 634.0
+offset_left = 2.0
+offset_top = -1328.0
+offset_right = 3632.0
+offset_bottom = 631.0
 texture = ExtResource("1_uojgg")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -319,3 +320,7 @@ zoom = Vector2(2, 2)
 
 [node name="Lvl_Portal" parent="." instance=ExtResource("7_ulysj")]
 position = Vector2(1902, -694)
+
+[node name="Button_menu" parent="." instance=ExtResource("9_qbfq4")]
+
+[node name="Button_menu2" parent="." instance=ExtResource("9_qbfq4")]
