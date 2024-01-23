@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4qhty63g5i6r"]
+
+[ext_resource type="Texture2D" uid="uid://cdsri3ookxjeu" path="res://Background LVL/Lvl1.jpeg" id="1_0cdtb"]
+[ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="2_ltoqg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
+texture = ExtResource("2_ltoqg")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_gm1e0"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ao551")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 5999.0
+offset_bottom = 3000.0
+texture = ExtResource("1_0cdtb")
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2(5, 5)
+tile_set = SubResource("TileSet_gm1e0")
+format = 2
+layer_0/tile_data = PackedInt32Array(2162688, 65536, 1, 2228224, 65536, 2, 2162689, 65536, 1, 2228225, 65536, 2, 2162690, 65536, 1, 2228226, 65536, 2, 2162691, 65536, 1, 2228227, 65536, 2, 2162692, 65536, 1, 2228228, 65536, 2, 2162693, 65536, 1, 2228229, 65536, 2, 2162694, 65536, 1, 2228230, 65536, 2, 2162695, 65536, 1, 2228231, 65536, 2, 2162696, 65536, 1, 2228232, 65536, 2, 2162697, 65536, 1, 2228233, 65536, 2, 2162698, 65536, 1, 2228234, 65536, 2, 2162699, 65536, 1, 2228235, 65536, 2, 2162700, 65536, 1, 2228236, 65536, 2, 2162701, 65536, 1, 2228237, 65536, 2, 2162702, 65536, 1, 2228238, 65536, 2, 2162703, 65536, 1, 2228239, 65536, 2, 2162704, 65536, 1, 2228240, 65536, 2, 2162705, 65536, 1, 2228241, 65536, 2, 2162706, 65536, 1, 2228242, 65536, 2, 2162707, 65536, 1, 2228243, 65536, 2, 2162708, 65536, 1, 2228244, 65536, 2, 2162709, 65536, 1, 2228245, 65536, 2, 2162710, 65536, 1, 2228246, 65536, 2, 2162711, 65536, 1, 2228247, 65536, 2, 2162712, 65536, 1, 2228248, 65536, 2, 2162713, 65536, 1, 2228249, 65536, 2, 2162714, 65536, 1, 2228250, 65536, 2, 2162715, 65536, 1, 2228251, 65536, 2, 2162716, 65536, 1, 2228252, 65536, 2, 2162717, 65536, 1, 2228253, 65536, 2, 2162718, 65536, 1, 2228254, 65536, 2, 2162719, 65536, 1, 2228255, 65536, 2, 2162720, 65536, 1, 2228256, 65536, 2, 2162721, 65536, 1, 2228257, 65536, 2, 2162722, 65536, 1, 2228258, 65536, 2, 2162723, 65536, 1, 2228259, 65536, 2, 2162724, 65536, 1, 2228260, 65536, 2, 2162725, 65536, 1, 2228261, 65536, 2, 2162726, 65536, 1, 2228262, 65536, 2, 2162727, 65536, 1, 2228263, 65536, 2, 2162728, 65536, 1, 2228264, 65536, 2, 2162729, 65536, 1, 2228265, 65536, 2, 2162730, 65536, 1, 2228266, 65536, 2, 2162731, 65536, 1, 2228267, 65536, 2, 2162732, 65536, 1, 2228268, 65536, 2)

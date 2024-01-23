@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckd45xdn1eli7"]
+
+[ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="1_88p7x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dm3vb"]
+size = Vector2(42, 23)
+
+[node name="Plateformes" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_88p7x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_dm3vb")
