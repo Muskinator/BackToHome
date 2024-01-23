@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://d14763eeahkyr"]
+[gd_scene load_steps=4 format=3 uid="uid://d14763eeahkyr"]
 
+[ext_resource type="Script" path="res://Scene/main_level.gd" id="1_asej1"]
 [ext_resource type="Texture2D" uid="uid://rp21pn48hup8" path="res://Background LVL/Lvl0.webp" id="1_pykdn"]
 
 [sub_resource type="SystemFont" id="SystemFont_rqwya"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_asej1")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -72,7 +74,7 @@ alignment = 1
 [node name="séparation2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button_Start" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Button_lvl_1" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 texture_filter = 1
 layout_mode = 2
 text = "LEVEL 1"
@@ -80,7 +82,7 @@ text = "LEVEL 1"
 [node name="séparation" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button_lvl" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Button_lvl_2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 texture_filter = 1
 layout_mode = 2
 text = "LEVEL 2"
@@ -88,7 +90,7 @@ text = "LEVEL 2"
 [node name="séparation3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button_Exit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Button_lvl_3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 texture_filter = 1
 layout_mode = 2
 text = "LEVEL 3"
