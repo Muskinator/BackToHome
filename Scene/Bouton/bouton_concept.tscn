@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkfl82ewu45if"]
+
+[ext_resource type="Script" path="res://Scene/Bouton/bouton_concept.gd" id="1_dreag"]
+[ext_resource type="Texture2D" uid="uid://lpy0ehihgle8" path="res://Assets/page_concept.png" id="1_dw8nh"]
+
+[node name="Bouton_Concept" type="CanvasLayer"]
+script = ExtResource("1_dreag")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -97.0
+offset_top = 17.0
+offset_right = -31.0
+offset_bottom = 73.0
+grow_horizontal = 0
+
+[node name="Button" type="Button" parent="Panel"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -19.0
+offset_top = -24.0
+offset_right = 89.0
+offset_bottom = 84.0
+icon = ExtResource("1_dw8nh")
+flat = true
