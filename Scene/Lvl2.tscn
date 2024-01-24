@@ -1,14 +1,19 @@
-[gd_scene load_steps=14 format=3 uid="uid://ytq4l5q6y7lq"]
+[gd_scene load_steps=19 format=3 uid="uid://ytq4l5q6y7lq"]
 
 [ext_resource type="Texture2D" uid="uid://d3yxjr4gleh4f" path="res://Background LVL/Lvl2.webp" id="1_m6jl8"]
 [ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="2_wbmil"]
 [ext_resource type="Texture2D" uid="uid://d1y5i0mq7faem" path="res://Assets/dirt.png" id="3_hox87"]
 [ext_resource type="Texture2D" uid="uid://dt26ors8wl3fh" path="res://Assets/plateformes.webp" id="4_shgt8"]
 [ext_resource type="PackedScene" uid="uid://c6smbwm8343qi" path="res://Scene/character_body_2d.tscn" id="5_84knb"]
-[ext_resource type="PackedScene" path="res://Scene/collectable.tscn" id="6_a7jkx"]
 [ext_resource type="Script" path="res://Scene/game_manager.gd" id="7_b8tlt"]
+[ext_resource type="PackedScene" uid="uid://bxjx0r0f5eaxj" path="res://Scene/plume.tscn" id="7_uropl"]
 [ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/bouton_concept.tscn" id="8_vvfrh"]
 [ext_resource type="PackedScene" uid="uid://bv5herxhodg57" path="res://Scene/Livre_Lvl2.tscn" id="9_le6xu"]
+[ext_resource type="Script" path="res://Scene/inventory/Inventory.gd" id="10_1b8js"]
+[ext_resource type="Texture2D" uid="uid://bfuo7knunh0uw" path="res://Inventory case.png" id="11_rgifm"]
+[ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Inventory.png" id="12_uun6x"]
+[ext_resource type="PackedScene" uid="uid://bnk2vbnn5owne" path="res://Scene/encre.tscn" id="13_blt1p"]
+[ext_resource type="PackedScene" uid="uid://cwf41dq8hcr5b" path="res://Scene/page.tscn" id="14_drpl7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
 texture = ExtResource("2_wbmil")
@@ -201,36 +206,14 @@ position = Vector2(314, 381)
 position = Vector2(34, 16)
 zoom = Vector2(1.2, 1.2)
 
-[node name="Collectable" parent="." instance=ExtResource("6_a7jkx")]
-position = Vector2(715, 264)
+[node name="Node" type="Node" parent="."]
 
-[node name="Collectable2" parent="." instance=ExtResource("6_a7jkx")]
-position = Vector2(1100, 168)
+[node name="plume" parent="Node" instance=ExtResource("7_uropl")]
+position = Vector2(1568, -28)
 
 [node name="Game Manager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("7_b8tlt")
-
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="Panel" type="Panel" parent="UI"]
-texture_filter = 1
-offset_left = 19.0
-offset_top = 20.0
-offset_right = 215.0
-offset_bottom = 95.0
-
-[node name="Label" type="Label" parent="UI/Panel"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Points : 0"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -250,3 +233,78 @@ grow_vertical = 2
 
 [node name="Lvl_Portal" parent="." instance=ExtResource("9_le6xu")]
 position = Vector2(740, -1753)
+
+[node name="UI inventory" type="CanvasLayer" parent="."]
+
+[node name="Inventory2" type="Control" parent="UI inventory"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("10_1b8js")
+
+[node name="cases" type="Node" parent="UI inventory"]
+
+[node name="Panel" type="Panel" parent="UI inventory/cases"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InventoryCase2" type="Sprite2D" parent="UI inventory/cases/Panel"]
+texture_filter = 1
+position = Vector2(86.25, 561.5)
+scale = Vector2(2.95312, 2.71875)
+texture = ExtResource("11_rgifm")
+
+[node name="InventoryCase" type="Sprite2D" parent="UI inventory/cases/Panel"]
+texture_filter = 1
+position = Vector2(179.25, 561.5)
+scale = Vector2(2.90625, 2.71875)
+texture = ExtResource("11_rgifm")
+
+[node name="InventoryCase4" type="Sprite2D" parent="UI inventory/cases/Panel"]
+texture_filter = 1
+position = Vector2(1074, 566)
+scale = Vector2(2.82812, 2.75)
+texture = ExtResource("11_rgifm")
+
+[node name="InventoryCase3" type="Sprite2D" parent="UI inventory/cases/Panel"]
+texture_filter = 1
+position = Vector2(269, 561.5)
+scale = Vector2(2.82813, 2.71875)
+texture = ExtResource("11_rgifm")
+
+[node name="Inventory" type="Sprite2D" parent="UI inventory"]
+texture_filter = 1
+position = Vector2(83, 498)
+texture = ExtResource("12_uun6x")
+
+[node name="UI Level" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI Level"]
+texture_filter = 1
+offset_left = 19.0
+offset_top = 20.0
+offset_right = 215.0
+offset_bottom = 95.0
+
+[node name="Label" type="Label" parent="UI Level/Panel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "LEVEL 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Collectable" parent="." instance=ExtResource("13_blt1p")]
+position = Vector2(2366, -592)
+
+[node name="Collectable2" parent="." instance=ExtResource("14_drpl7")]
+position = Vector2(2688, -1560)
+
+[node name="Collectable3" parent="." instance=ExtResource("14_drpl7")]
+position = Vector2(849, -356)
