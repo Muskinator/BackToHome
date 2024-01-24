@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5onlyrc2qt27"
-path="res://.godot/imported/PP_2-Sheet.png-2882d417b013b012bcccf47253b5ba52.ctex"
+uid="uid://dkkjhcv2uftja"
+path="res://.godot/imported/Dragon.png-c7a8219bdc269c2c33f0b6492ef1bea0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PP_2-Sheet.png"
-dest_files=["res://.godot/imported/PP_2-Sheet.png-2882d417b013b012bcccf47253b5ba52.ctex"]
+source_file="res://Assets/Personnages/Dragon.png"
+dest_files=["res://.godot/imported/Dragon.png-c7a8219bdc269c2c33f0b6492ef1bea0.ctex"]
 
 [params]
 

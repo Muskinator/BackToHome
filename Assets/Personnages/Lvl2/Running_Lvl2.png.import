@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5tvcnc8c01ld"
-path="res://.godot/imported/PP_1.png-6804f2bcf9941f91855cfaa5353cb153.ctex"
+uid="uid://dkti0scatnj81"
+path="res://.godot/imported/Running_Lvl2.png-c9b17aab2710ebd3235e9682031fa745.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PP_1.png"
-dest_files=["res://.godot/imported/PP_1.png-6804f2bcf9941f91855cfaa5353cb153.ctex"]
+source_file="res://Assets/Personnages/Lvl2/Running_Lvl2.png"
+dest_files=["res://.godot/imported/Running_Lvl2.png-c9b17aab2710ebd3235e9682031fa745.ctex"]
 
 [params]
 

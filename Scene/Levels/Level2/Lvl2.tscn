@@ -1,22 +1,22 @@
 [gd_scene load_steps=19 format=3 uid="uid://ytq4l5q6y7lq"]
 
-[ext_resource type="Texture2D" uid="uid://d3yxjr4gleh4f" path="res://Background LVL/Lvl2.webp" id="1_m6jl8"]
-[ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="2_wbmil"]
-[ext_resource type="Texture2D" uid="uid://d1y5i0mq7faem" path="res://Assets/dirt.png" id="3_hox87"]
-[ext_resource type="Texture2D" uid="uid://dt26ors8wl3fh" path="res://Assets/plateformes.webp" id="4_shgt8"]
-[ext_resource type="PackedScene" uid="uid://c6smbwm8343qi" path="res://Scene/character_body_2d.tscn" id="5_84knb"]
-[ext_resource type="Script" path="res://Scene/game_manager.gd" id="7_b8tlt"]
-[ext_resource type="PackedScene" uid="uid://bxjx0r0f5eaxj" path="res://Scene/plume.tscn" id="7_uropl"]
-[ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/bouton_concept.tscn" id="8_vvfrh"]
-[ext_resource type="PackedScene" uid="uid://bv5herxhodg57" path="res://Scene/Livre_Lvl2.tscn" id="9_le6xu"]
-[ext_resource type="Script" path="res://Scene/Inventory.gd" id="10_1b8js"]
-[ext_resource type="Texture2D" uid="uid://bfuo7knunh0uw" path="res://Assets/Inventory case.png" id="11_rgifm"]
-[ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Assets/Inventory.png" id="12_uun6x"]
-[ext_resource type="PackedScene" uid="uid://bnk2vbnn5owne" path="res://Scene/encre.tscn" id="13_blt1p"]
-[ext_resource type="PackedScene" uid="uid://cwf41dq8hcr5b" path="res://Scene/page.tscn" id="14_drpl7"]
+[ext_resource type="Texture2D" uid="uid://d3yxjr4gleh4f" path="res://Background LVL/Lvl2.webp" id="1_i6n0d"]
+[ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="2_lo7ba"]
+[ext_resource type="Texture2D" uid="uid://d1y5i0mq7faem" path="res://Assets/dirt.png" id="3_nuawn"]
+[ext_resource type="Texture2D" uid="uid://dt26ors8wl3fh" path="res://Assets/plateformes.webp" id="4_s13ee"]
+[ext_resource type="PackedScene" uid="uid://bxjx0r0f5eaxj" path="res://Scene/plume.tscn" id="5_5gitn"]
+[ext_resource type="Script" path="res://Scene/game_manager.gd" id="6_yxcco"]
+[ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/bouton_concept.tscn" id="7_ojfi0"]
+[ext_resource type="PackedScene" uid="uid://bv5herxhodg57" path="res://Scene/Livre_Lvl2.tscn" id="8_dp4mw"]
+[ext_resource type="Script" path="res://Scene/Inventory.gd" id="9_d6qjo"]
+[ext_resource type="Texture2D" uid="uid://bfuo7knunh0uw" path="res://Assets/Inventory case.png" id="10_u53cg"]
+[ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Assets/Inventory.png" id="11_8adfb"]
+[ext_resource type="PackedScene" uid="uid://bnk2vbnn5owne" path="res://Scene/encre.tscn" id="12_3umq4"]
+[ext_resource type="PackedScene" uid="uid://cwf41dq8hcr5b" path="res://Scene/page.tscn" id="13_bs5t6"]
+[ext_resource type="PackedScene" uid="uid://bcnvs21rn6ali" path="res://Scene/Levels/Level2/character_body_2d_Lvl2.tscn" id="14_1db8j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
-texture = ExtResource("2_wbmil")
+texture = ExtResource("2_lo7ba")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -49,7 +49,7 @@ texture = ExtResource("2_wbmil")
 2:2/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2h4o5"]
-texture = ExtResource("3_hox87")
+texture = ExtResource("3_nuawn")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -79,7 +79,7 @@ texture = ExtResource("3_hox87")
 2:2/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nd0h3"]
-texture = ExtResource("4_shgt8")
+texture = ExtResource("4_s13ee")
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
@@ -190,7 +190,7 @@ offset_left = 15.0
 offset_top = -2847.0
 offset_right = 5824.0
 offset_bottom = 652.0
-texture = ExtResource("1_m6jl8")
+texture = ExtResource("1_i6n0d")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -199,21 +199,14 @@ tile_set = SubResource("TileSet_gm1e0")
 format = 2
 layer_0/tile_data = PackedInt32Array(393216, 65538, 1, 393217, 65538, 1, 393218, 65538, 1, 393219, 65538, 1, 393220, 65538, 1, 393221, 65538, 1, 393222, 65538, 1, 393223, 65538, 1, 393224, 65538, 1, 393225, 65538, 1, 393226, 65538, 1, 393227, 65538, 1, 393228, 65538, 1, 393229, 65538, 1, 393230, 65538, 1, 393231, 65538, 1, 393232, 65538, 1, 393233, 65538, 1, 393234, 65538, 1, 393235, 65538, 1, 393236, 65538, 1, 393237, 65538, 1, 393238, 65538, 1, 393239, 65538, 1, 393240, 65538, 1, 393241, 65538, 1, 393242, 65538, 1, 393243, 65538, 1, 393244, 65538, 1, 393245, 65538, 1, 393246, 65538, 1, 393247, 65538, 1, 393248, 65538, 1, 393249, 65538, 1, 393250, 65538, 1, 393251, 65538, 1, 393252, 65538, 1, 393253, 65538, 1, 393254, 65538, 1, 393255, 65538, 1, 393256, 65538, 1, 393257, 65538, 1, 393258, 65538, 1, 393259, 65538, 1, 393260, 65538, 1, 393261, 65538, 1, 393262, 65538, 1, 393263, 65538, 1, 393264, 65538, 1, 393265, 65538, 1, 393266, 65538, 1, 393267, 65538, 1, 393268, 65538, 1, 393269, 65538, 1, 393270, 65538, 1, 393271, 327682, 1, 393272, 327682, 1, 393273, 327682, 1, 393274, 327682, 1, 393275, 327682, 1, 393276, 327682, 1, 393277, 327682, 1, 393278, 327682, 1, 393279, 327682, 1, 393280, 327682, 1, 393281, 327682, 1, 393282, 327682, 1, 393283, 327682, 1, 393284, 327682, 1, 393285, 327682, 1, 393286, 327682, 1, 393287, 327682, 1, 393288, 327682, 1, 393289, 327682, 1, 393290, 327682, 1, 458752, 65537, 1, 458753, 65537, 1, 458754, 65537, 1, 458755, 65537, 1, 458756, 65537, 1, 458757, 65537, 1, 458758, 65537, 1, 458759, 65537, 1, 458760, 65537, 1, 458761, 65537, 1, 458762, 65537, 1, 458763, 65537, 1, 458764, 65537, 1, 458765, 65537, 1, 458766, 65537, 1, 458767, 65537, 1, 458768, 65537, 1, 458769, 65537, 1, 458770, 65537, 1, 458771, 65537, 1, 458772, 65537, 1, 458773, 65537, 1, 458774, 65537, 1, 458775, 65537, 1, 458776, 65537, 1, 458777, 65537, 1, 458778, 65537, 1, 458779, 65537, 1, 458780, 65537, 1, 458781, 65537, 1, 458782, 65537, 1, 458783, 65537, 268435457, 458784, 65537, 268435457, 458785, 65537, 268435457, 458786, 65537, 268435457, 458787, 65537, 268435457, 458788, 65537, 268435457, 458789, 65537, 268435457, 458790, 65537, 268435457, 458791, 65537, 268435457, 458792, 65537, 268435457, 458793, 65537, 268435457, 458794, 65537, 268435457, 458795, 65537, 268435457, 458796, 65537, 268435457, 458797, 65537, 268435457, 458798, 65537, 268435457, 458799, 65537, 268435457, 458800, 65537, 268435457, 458801, 65537, 268435457, 458802, 65537, 268435457, 458803, 65537, 268435457, 458804, 65537, 268435457, 458805, 65537, 268435457, 458806, 65537, 268435457, 458807, 65537, 268435457, 458808, 65537, 268435457, 458809, 65537, 268435457, 458810, 65537, 268435457, 458811, 65537, 268435457, 458812, 65537, 268435457, 458813, 65537, 268435457, 458814, 65537, 268435457, 458815, 65537, 268435457, 458816, 65537, 268435457, 458817, 65537, 268435457, 458818, 65537, 268435457, 458819, 65537, 268435457, 458820, 65537, 268435457, 458821, 65537, 268435457, 458822, 65537, 268435457, 458823, 65537, 268435457, 458824, 65537, 268435457, 458825, 65537, 268435457, 458826, 65537, 268435457, 393291, 393218, 1, 458751, 196610, 1, 262151, 2, 1, 262152, 65538, 1, 262153, 131074, 1, 131084, 2, 1, 131085, 65538, 1, 131086, 131074, 1, 18, 2, 1, 19, 65538, 1, 20, 131074, 1, 327687, 2, 2, 327688, 65538, 2, 327689, 131074, 2, 196620, 2, 2, 196621, 65538, 2, 196622, 131074, 2, 65554, 2, 2, 65555, 65538, 2, 65556, 131074, 2, -131048, 2, 1, -65512, 2, 2, -131047, 65538, 1, -65511, 65538, 2, -131046, 131074, 1, -65510, 131074, 2, -393201, 2, 1, -327665, 2, 2, -393200, 65538, 1, -327664, 65538, 2, -393199, 131074, 1, -327663, 131074, 2, -1048540, 2, 1, -983004, 2, 2, -1048539, 65538, 1, -983003, 65538, 2, -1048538, 131074, 1, -983002, 131074, 2, -1245152, 2, 1, -1179616, 2, 2, -1245151, 65538, 1, -1179615, 65538, 2, -1245150, 131074, 1, -1179614, 131074, 2, -1507292, 2, 1, -1441756, 2, 2, -1507291, 65538, 1, -1441755, 65538, 2, -1507290, 131074, 1, -1441754, 131074, 2, -262116, 2, 1, -196580, 2, 2, -262115, 65538, 1, -196579, 65538, 2, -262114, 131074, 1, -196578, 131074, 2, -589800, 2, 1, -524264, 2, 2, -589799, 65538, 1, -524263, 65538, 2, -589798, 131074, 1, -524262, 131074, 2, -131059, 2, 1, -131058, 65538, 1, -131057, 131074, 1, -262135, 2, 1, -262134, 65538, 1, -262133, 131074, 1, -393184, 2, 1, -393183, 65538, 1, -393182, 131074, 1, -458723, 65538, 1, -1507298, 2, 1, -1441762, 2, 2, -1507297, 65538, 1, -1441761, 65538, 2, -1507296, 131074, 1, -1441760, 131074, 2, -1507303, 2, 1, -1441767, 2, 2, -1507302, 65538, 1, -1441766, 65538, 2, -1507301, 131074, 1, -1441765, 131074, 2, -1507309, 65538, 1, -1441773, 2, 2, -1507308, 65538, 1, -1441772, 65538, 2, -1507307, 65538, 1, -1441771, 131074, 2, -1638386, 65538, 1, -1572850, 2, 2, -1638385, 65538, 1, -1572849, 65538, 2, -1638384, 65538, 1, -1572848, 131074, 2, -1376248, 65538, 1, -1310712, 65538, 2, -1376247, 65538, 1, -1310711, 131074, 2, -1376249, 2, 1, -1310713, 2, 2, -327648, 2, 2, -327647, 65538, 2, -327646, 131074, 2, 131088, 65538, 1, 131089, 65538, 1, -458732, 2, 1, -393196, 2, 2, -458731, 65538, 1, -393195, 65538, 2, -458730, 131074, 1, -393194, 131074, 2, -720876, 2, 1, -655340, 2, 2, -720875, 65538, 1, -655339, 65538, 2, -720874, 131074, 1, -655338, 131074, 2, -786407, 2, 1, -720871, 2, 2, -786406, 65538, 1, -720870, 65538, 2, -786405, 131074, 1, -720869, 131074, 2, -851939, 2, 1, -786403, 2, 2, -851938, 65538, 1, -786402, 65538, 2, -786401, 131074, 2, -851937, 131074, 1, -196599, 2, 2, -196598, 65538, 2, -196597, 131074, 2, -65523, 2, 2, -65522, 65538, 2, -65521, 131074, 2, -917471, 2, 1, -851935, 2, 2, -917470, 65538, 1, -851934, 65538, 2, -917469, 131074, 1, -851933, 131074, 2, -1179608, 2, 1, -1114072, 2, 2, -1179607, 65538, 1, -1114071, 65538, 2, -1179606, 131074, 1, -1114070, 131074, 2, -1310677, 65538, 1, -1376216, 65538, 1, -1507306, 65538, 1, -1638383, 65538, 1, -1572846, 65538, 1, -1572847, 65538, 1, -1507310, 65538, 1, -1572851, 65538, 1, -1507316, 65538, 1, -1441781, 65538, 1, -1376246, 65538, 1)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("5_84knb")]
-position = Vector2(314, 381)
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(34, 16)
-zoom = Vector2(1.2, 1.2)
-
 [node name="Node" type="Node" parent="."]
 
-[node name="plume" parent="Node" instance=ExtResource("7_uropl")]
+[node name="plume" parent="Node" instance=ExtResource("5_5gitn")]
 position = Vector2(1568, -28)
 
 [node name="Game Manager" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("7_b8tlt")
+script = ExtResource("6_yxcco")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -229,9 +222,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Bouton_Concept" parent="." instance=ExtResource("8_vvfrh")]
+[node name="Bouton_Concept" parent="." instance=ExtResource("7_ojfi0")]
 
-[node name="Lvl_Portal" parent="." instance=ExtResource("9_le6xu")]
+[node name="Lvl_Portal" parent="." instance=ExtResource("8_dp4mw")]
 position = Vector2(740, -1753)
 
 [node name="UI inventory" type="CanvasLayer" parent="."]
@@ -241,7 +234,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("10_1b8js")
+script = ExtResource("9_d6qjo")
 
 [node name="cases" type="Node" parent="UI inventory"]
 
@@ -253,30 +246,30 @@ offset_bottom = 40.0
 texture_filter = 1
 position = Vector2(86.25, 561.5)
 scale = Vector2(2.95312, 2.71875)
-texture = ExtResource("11_rgifm")
+texture = ExtResource("10_u53cg")
 
 [node name="InventoryCase" type="Sprite2D" parent="UI inventory/cases/Panel"]
 texture_filter = 1
 position = Vector2(179.25, 561.5)
 scale = Vector2(2.90625, 2.71875)
-texture = ExtResource("11_rgifm")
+texture = ExtResource("10_u53cg")
 
 [node name="InventoryCase4" type="Sprite2D" parent="UI inventory/cases/Panel"]
 texture_filter = 1
 position = Vector2(1074, 566)
 scale = Vector2(2.82812, 2.75)
-texture = ExtResource("11_rgifm")
+texture = ExtResource("10_u53cg")
 
 [node name="InventoryCase3" type="Sprite2D" parent="UI inventory/cases/Panel"]
 texture_filter = 1
 position = Vector2(269, 561.5)
 scale = Vector2(2.82813, 2.71875)
-texture = ExtResource("11_rgifm")
+texture = ExtResource("10_u53cg")
 
 [node name="Inventory" type="Sprite2D" parent="UI inventory"]
 texture_filter = 1
 position = Vector2(83, 498)
-texture = ExtResource("12_uun6x")
+texture = ExtResource("11_8adfb")
 
 [node name="UI Level" type="CanvasLayer" parent="."]
 
@@ -300,11 +293,16 @@ text = "LEVEL 2"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Collectable" parent="." instance=ExtResource("13_blt1p")]
+[node name="Collectable" parent="." instance=ExtResource("12_3umq4")]
 position = Vector2(2366, -592)
 
-[node name="Collectable2" parent="." instance=ExtResource("14_drpl7")]
+[node name="Collectable2" parent="." instance=ExtResource("13_bs5t6")]
 position = Vector2(2688, -1560)
 
-[node name="Collectable3" parent="." instance=ExtResource("14_drpl7")]
+[node name="Collectable3" parent="." instance=ExtResource("13_bs5t6")]
 position = Vector2(849, -356)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("14_1db8j")]
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-6, -10)
