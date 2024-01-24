@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://c001hxvuv6kax"]
 
 [ext_resource type="Script" path="res://Scene/concept_du_jeu.gd" id="1_a5e24"]
-[ext_resource type="Texture2D" uid="uid://bcb6p1ng2224b" path="res://Scene/background-violet.webp" id="2_3k8nr"]
+[ext_resource type="Texture2D" uid="uid://bcb6p1ng2224b" path="res://Assets/background-violet.webp" id="2_3k8nr"]
 [ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/bouton_concept.tscn" id="4_jdphc"]
 
 [sub_resource type="SystemFont" id="SystemFont_ycfst"]

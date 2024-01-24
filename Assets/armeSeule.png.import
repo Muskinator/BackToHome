@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfuo7knunh0uw"
-path="res://.godot/imported/Inventory case.png-0505c078c530ef8b841988bd620f296d.ctex"
+uid="uid://bubon1s7o66mk"
+path="res://.godot/imported/armeSeule.png-2616f3949c30e2627da428cf93fc3b69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory case.png"
-dest_files=["res://.godot/imported/Inventory case.png-0505c078c530ef8b841988bd620f296d.ctex"]
+source_file="res://Assets/armeSeule.png"
+dest_files=["res://.godot/imported/armeSeule.png-2616f3949c30e2627da428cf93fc3b69.ctex"]
 
 [params]
 

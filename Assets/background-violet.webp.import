@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bubon1s7o66mk"
-path="res://.godot/imported/arme.png-f69ddb16641d24494923f5829807fc31.ctex"
+uid="uid://bcb6p1ng2224b"
+path="res://.godot/imported/background-violet.webp-d3a5e9bb89f469d4fb3f12a030b10786.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scene/arme.png"
-dest_files=["res://.godot/imported/arme.png-f69ddb16641d24494923f5829807fc31.ctex"]
+source_file="res://Assets/background-violet.webp"
+dest_files=["res://.godot/imported/background-violet.webp-d3a5e9bb89f469d4fb3f12a030b10786.ctex"]
 
 [params]
 

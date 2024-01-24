@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://desads3tlfanb"]
 
-[ext_resource type="Script" path="res://Scene/Épée_Lvl1.gd" id="1_ljxr6"]
-[ext_resource type="Texture2D" uid="uid://bubon1s7o66mk" path="res://Scene/arme.png" id="2_njdwp"]
+[ext_resource type="Script" path="res://Scene/Epee_Lvl1.gd" id="1_ljxr6"]
+[ext_resource type="Texture2D" uid="uid://bubon1s7o66mk" path="res://Assets/armeSeule.png" id="2_njdwp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ex4u2"]
 size = Vector2(215.5, 186.875)

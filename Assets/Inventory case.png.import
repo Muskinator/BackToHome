@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcb6p1ng2224b"
-path="res://.godot/imported/background-violet.webp-f71fd668a5852f2a8096728042780174.ctex"
+uid="uid://bfuo7knunh0uw"
+path="res://.godot/imported/Inventory case.png-9c7d4d7a4d2887c7a8b980dbb012cc34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scene/background-violet.webp"
-dest_files=["res://.godot/imported/background-violet.webp-f71fd668a5852f2a8096728042780174.ctex"]
+source_file="res://Assets/Inventory case.png"
+dest_files=["res://.godot/imported/Inventory case.png-9c7d4d7a4d2887c7a8b980dbb012cc34.ctex"]
 
 [params]
 

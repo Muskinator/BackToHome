@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://bxjx0r0f5eaxj" path="res://Scene/plume.tscn" id="7_uropl"]
 [ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/bouton_concept.tscn" id="8_vvfrh"]
 [ext_resource type="PackedScene" uid="uid://bv5herxhodg57" path="res://Scene/Livre_Lvl2.tscn" id="9_le6xu"]
-[ext_resource type="Script" path="res://Scene/inventory/Inventory.gd" id="10_1b8js"]
-[ext_resource type="Texture2D" uid="uid://bfuo7knunh0uw" path="res://Inventory case.png" id="11_rgifm"]
-[ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Inventory.png" id="12_uun6x"]
+[ext_resource type="Script" path="res://Scene/Inventory.gd" id="10_1b8js"]
+[ext_resource type="Texture2D" uid="uid://bfuo7knunh0uw" path="res://Assets/Inventory case.png" id="11_rgifm"]
+[ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Assets/Inventory.png" id="12_uun6x"]
 [ext_resource type="PackedScene" uid="uid://bnk2vbnn5owne" path="res://Scene/encre.tscn" id="13_blt1p"]
 [ext_resource type="PackedScene" uid="uid://cwf41dq8hcr5b" path="res://Scene/page.tscn" id="14_drpl7"]
 

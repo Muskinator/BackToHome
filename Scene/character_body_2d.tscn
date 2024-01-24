@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6smbwm8343qi"]
+[gd_scene load_steps=8 format=3 uid="uid://c6smbwm8343qi"]
 
 [ext_resource type="Script" path="res://Scene/character_body_2d.gd" id="1_qg1ce"]
 [ext_resource type="Texture2D" uid="uid://c5onlyrc2qt27" path="res://Assets/PP_2-Sheet.png" id="2_6ywmb"]
@@ -16,29 +16,54 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_e2dn3")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e2dn3")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gqqya")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Running",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dxd7l"]
 size = Vector2(50, 138)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfgcp"]
+size = Vector2(50, 138)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(-30, -38)
 script = ExtResource("1_qg1ce")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(43, 43)
+position = Vector2(43, 44)
 scale = Vector2(1.43, 1.43)
 sprite_frames = SubResource("SpriteFrames_tcahx")
+animation = &"Default"
+autoplay = "Default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 texture_filter = 1
-position = Vector2(57, 36)
+position = Vector2(57, 35)
 shape = SubResource("RectangleShape2D_dxd7l")
+
+[node name="hurtBox" type="Area2D" parent="CollisionShape2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/hurtBox"]
+shape = SubResource("RectangleShape2D_sfgcp")
