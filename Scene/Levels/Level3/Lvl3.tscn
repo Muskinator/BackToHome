@@ -446,36 +446,59 @@ position = Vector2(5130, -1901)
 
 [node name="UI inventory" type="CanvasLayer" parent="."]
 
-[node name="cases" type="Node" parent="UI inventory"]
+[node name="Container" type="Control" parent="UI inventory"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -9.0
+offset_top = -648.0
+offset_right = 31.0
+offset_bottom = -608.0
+grow_vertical = 0
 
-[node name="InventoryCase2" type="Sprite2D" parent="UI inventory/cases"]
+[node name="InventoryCase2" type="Sprite2D" parent="UI inventory/Container"]
 texture_filter = 1
 position = Vector2(86.25, 561.5)
 scale = Vector2(2.95312, 2.71875)
 texture = ExtResource("11_6lj6o")
 
-[node name="InventoryCase" type="Sprite2D" parent="UI inventory/cases"]
+[node name="InventoryCase" type="Sprite2D" parent="UI inventory/Container"]
 texture_filter = 1
 position = Vector2(179.25, 561.5)
 scale = Vector2(2.90625, 2.71875)
 texture = ExtResource("11_6lj6o")
 
-[node name="InventoryCase4" type="Sprite2D" parent="UI inventory/cases"]
-texture_filter = 1
-position = Vector2(1074, 566)
-scale = Vector2(2.82812, 2.75)
-texture = ExtResource("11_6lj6o")
-
-[node name="InventoryCase3" type="Sprite2D" parent="UI inventory/cases"]
+[node name="InventoryCase3" type="Sprite2D" parent="UI inventory/Container"]
 texture_filter = 1
 position = Vector2(269, 561.5)
 scale = Vector2(2.82813, 2.71875)
 texture = ExtResource("11_6lj6o")
 
-[node name="Inventory" type="Sprite2D" parent="UI inventory"]
+[node name="Inventory" type="Sprite2D" parent="UI inventory/Container"]
 texture_filter = 1
 position = Vector2(83, 498)
 texture = ExtResource("12_o0in3")
+
+[node name="Control" type="Control" parent="UI inventory"]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1157.0
+offset_top = -654.0
+offset_right = -1117.0
+offset_bottom = -614.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="InventoryCase4" type="Sprite2D" parent="UI inventory/Control"]
+texture_filter = 1
+position = Vector2(1065, 566)
+scale = Vector2(2.82812, 2.75)
+texture = ExtResource("11_6lj6o")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

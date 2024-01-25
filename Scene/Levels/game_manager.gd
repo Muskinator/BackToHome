@@ -11,5 +11,7 @@ func Lose_Life():
 	else :
 		print(lives)
 		hearts_label.text = "Hearts : "+ str(lives)
+		
+		
 	
 	

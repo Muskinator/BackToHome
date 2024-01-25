@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://b5rroiqok4ye7"]
+
+[ext_resource type="Script" path="res://Scene/Objets/Objet_degats/mob_dragon.gd" id="1_mwm2m"]
+[ext_resource type="Texture2D" uid="uid://dkkjhcv2uftja" path="res://Assets/Personnages/Dragon.png" id="2_fyop1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01fx8"]
+atlas = ExtResource("2_fyop1")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80cst"]
+atlas = ExtResource("2_fyop1")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7jg48"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01fx8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_80cst")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e3xaf"]
+radius = 60.075
+
+[node name="CharacterBody" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_mwm2m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(15, -44)
+sprite_frames = SubResource("SpriteFrames_7jg48")
+animation = &"Default"
+autoplay = "Default"
+frame_progress = 0.876526
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -19)
+shape = SubResource("CircleShape2D_e3xaf")
