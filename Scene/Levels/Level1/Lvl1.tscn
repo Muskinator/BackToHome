@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b4qhty63g5i6r"]
+[gd_scene load_steps=28 format=3 uid="uid://b4qhty63g5i6r"]
 
 [ext_resource type="Texture2D" uid="uid://bfhgdougyyqww" path="res://Background LVL/Background_essaie3.webp" id="1_qnsij"]
 [ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="2_eq0ml"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Assets/Inventory.png" id="12_hvsgy"]
 [ext_resource type="PackedScene" uid="uid://desads3tlfanb" path="res://Scene/Objets/Objet_Fin_De_Lvl/Lvl1/Epee_Lvl1.tscn" id="13_1a0m5"]
 [ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/Bouton/bouton_concept.tscn" id="14_rev18"]
+[ext_resource type="PackedScene" uid="uid://dmn6yd877sk0g" path="res://Scene/Objets/Objet_degats/pique.tscn" id="19_yguau"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
 texture = ExtResource("2_eq0ml")
@@ -503,6 +504,45 @@ position = Vector2(3422, -1893)
 position = Vector2(-4, -1306)
 
 [node name="Collectable2" parent="." instance=ExtResource("7_erdrs")]
-position = Vector2(1526, -1751)
+position = Vector2(1525, -1731)
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Pique" parent="." instance=ExtResource("19_yguau")]
+position = Vector2(1593, -12)
+
+[node name="Piques" type="Node" parent="Pique"]
+
+[node name="Pique2" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(2200, -163)
+
+[node name="Pique3" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(2168, -163)
+
+[node name="Pique4" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(2136, -163)
+
+[node name="Pique5" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(1452, -725)
+
+[node name="Pique6" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(1483, -725)
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer3"]
+texture_filter = 1
+offset_left = 230.0
+offset_top = 19.0
+offset_right = 443.0
+offset_bottom = 94.0
+
+[node name="HeartsLabel" type="Label" parent="CanvasLayer3/Panel"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_right = 213.0
+offset_bottom = 75.0
+text = "Hearts : 3"
+horizontal_alignment = 1
+vertical_alignment = 1
