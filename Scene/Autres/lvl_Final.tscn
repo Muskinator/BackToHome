@@ -4,19 +4,19 @@
 [ext_resource type="Texture2D" uid="uid://b2e2deap6td21" path="res://Assets/portailfinal.png" id="2_7r1iv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ex4u2"]
-size = Vector2(273, 331)
+size = Vector2(170, 178)
 
-[node name="Lvl_Portal" type="Area2D"]
+[node name="Lvl_Portal2" type="Area2D"]
 script = ExtResource("1_8ej1c")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(19, -15)
-scale = Vector2(10.805, 8.74)
+position = Vector2(5.00001, -2)
+scale = Vector2(6.76125, 5.815)
 texture = ExtResource("2_7r1iv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -4)
+position = Vector2(-7, -1)
 shape = SubResource("RectangleShape2D_ex4u2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
