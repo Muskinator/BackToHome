@@ -372,6 +372,7 @@ sources/5 = SubResource("TileSetAtlasSource_82bp7")
 sources/6 = SubResource("TileSetAtlasSource_fkija")
 
 [node name="Node2D" type="Node2D"]
+metadata/_edit_vertical_guides_ = [2602.0]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -402,10 +403,10 @@ position = Vector2(-6, -10)
 [node name="Object_lvl_1" type="Node" parent="."]
 
 [node name="bois" parent="Object_lvl_1" instance=ExtResource("6_26cos")]
-position = Vector2(524, 276)
+position = Vector2(506, 301)
 
 [node name="bois2" parent="Object_lvl_1" instance=ExtResource("6_26cos")]
-position = Vector2(1218, 107)
+position = Vector2(1218, 125)
 
 [node name="FIl" parent="Object_lvl_1" instance=ExtResource("7_erdrs")]
 position = Vector2(2631, -530)
@@ -449,10 +450,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 3.0
-offset_right = 2.0
-offset_bottom = 3.0
+offset_top = -1.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("10_xijdo")
@@ -501,7 +500,7 @@ position = Vector2(3422, -1893)
 [node name="Bouton_Concept" parent="." instance=ExtResource("14_rev18")]
 
 [node name="Collectable" parent="." instance=ExtResource("8_5xxmn")]
-position = Vector2(-4, -1306)
+position = Vector2(-4, -1301)
 
 [node name="Collectable2" parent="." instance=ExtResource("7_erdrs")]
 position = Vector2(1525, -1731)
@@ -525,8 +524,26 @@ position = Vector2(2136, -163)
 [node name="Pique5" parent="Pique/Piques" instance=ExtResource("19_yguau")]
 position = Vector2(1452, -725)
 
+[node name="Pique7" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(713, -1458)
+
+[node name="Piques8" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(681, -1458)
+
 [node name="Pique6" parent="Pique/Piques" instance=ExtResource("19_yguau")]
 position = Vector2(1483, -725)
+
+[node name="Pique9" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(2684, -1858)
+
+[node name="Pique10" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(2652, -1858)
+
+[node name="Pique11" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(2716, -1858)
+
+[node name="Pique12" parent="Pique/Piques" instance=ExtResource("19_yguau")]
+position = Vector2(2748, -1858)
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="."]
 
