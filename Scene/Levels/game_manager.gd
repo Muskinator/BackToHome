@@ -1,11 +1,15 @@
 extends Node
+@onready var hearts_label = %HeartsLabel
 
 
-# Called when the node enters the scene tree for the first time.
-var points = 0
-func add_points ():
-	points += 1
-	print (points)
+var lives = 4
 
+func Check_Lives():
+	if lives <= 0:
+		get_tree().reload_current_scene()
 
-
+func Lose_Life():
+	lives -= 1
+	print(lives)
+	hearts_label.text = str(lives)
+	Check_Lives()

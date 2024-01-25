@@ -1,6 +1,7 @@
 extends Area2D
 
 
-func _on_body_entered(body):
-	if body.name == "CharacterBody2D" : body.get_tree().reload_current_scene()
+@onready var game_manager = %"Game Manager"
 
+func _on_body_entered(body):
+	game_manager.Lose_Life()

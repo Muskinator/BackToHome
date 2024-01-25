@@ -228,6 +228,7 @@ animations = [{
 radius = 24.0208
 
 [node name="Collectable" type="Area2D"]
+scale = Vector2(2.375, 2.40082)
 script = ExtResource("1_n2vcw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -9,19 +9,13 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @export var maxHealth = 3
 @onready var currentHealth: int = maxHealth
 
-func handleCollision ():
-	for i in get_slide_collision_count():
-		var collision = get_slide_collision(i)
-		var collider = collision.get_collider()
-		print_debug(collider.name)
-		
+
 func _physics_process(delta):
 	if (velocity.x > 1 || velocity.x < -1):
 		sprite_2d.animation = "Running"
 	else :
 		sprite_2d.animation = "Default"
 
-	handleCollision()
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta

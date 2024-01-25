@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bfuo7knunh0uw" path="res://Assets/Inventory case.png" id="11_6lj6o"]
 [ext_resource type="PackedScene" uid="uid://dlgbmuqulq3lb" path="res://Scene/Objets/Objet_Fin_De_Lvl/Lvl3/lvl_portalFinal.tscn" id="11_olwdf"]
 [ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Assets/Inventory.png" id="12_o0in3"]
-[ext_resource type="PackedScene" uid="uid://cmgobfd3mopox" path="res://Scene/HeartsContainer.tscn" id="15_45sb2"]
+[ext_resource type="PackedScene" uid="uid://dmn6yd877sk0g" path="res://Scene/Objets/Objet_degats/pique.tscn" id="14_1s0hu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
 texture = ExtResource("2_y07bu")
@@ -419,22 +419,6 @@ script = ExtResource("7_0fwbf")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
-[node name="heartsContainer" parent="UI" instance=ExtResource("15_45sb2")]
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -1138.0
-offset_top = -220.0
-offset_right = -878.0
-offset_bottom = -130.0
-grow_horizontal = 0
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-alignment = 0
-
 [node name="Panel" type="Panel" parent="UI"]
 texture_filter = 1
 offset_left = 19.0
@@ -492,3 +476,26 @@ texture = ExtResource("11_6lj6o")
 texture_filter = 1
 position = Vector2(83, 498)
 texture = ExtResource("12_o0in3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = 230.0
+offset_top = 19.0
+offset_right = 443.0
+offset_bottom = 94.0
+
+[node name="HeartsLabel" type="Label" parent="CanvasLayer/Panel"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_right = 213.0
+offset_bottom = 75.0
+text = "Hearts : 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Pique" parent="." instance=ExtResource("14_1s0hu")]
+position = Vector2(599, 315)
+scale = Vector2(2.35738, 2.37586)
