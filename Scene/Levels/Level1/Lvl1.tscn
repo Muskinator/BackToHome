@@ -495,7 +495,7 @@ scale = Vector2(2.82813, 2.71875)
 texture = ExtResource("11_6xymu")
 
 [node name="Épée_lvl1" parent="." instance=ExtResource("13_1a0m5")]
-position = Vector2(3415, -1904)
+position = Vector2(3422, -1893)
 
 [node name="Bouton_Concept" parent="." instance=ExtResource("14_rev18")]
 
