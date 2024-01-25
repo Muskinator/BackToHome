@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmgobfd3mopox"]
+
+[ext_resource type="PackedScene" uid="uid://pamawp0iivf5" path="res://Scene/HeartGui.tscn" id="1_6i0l6"]
+
+[node name="heartsContainer" type="HBoxContainer"]
+texture_filter = 1
+offset_right = 297.0
+offset_bottom = 99.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="Panel" parent="." instance=ExtResource("1_6i0l6")]
+texture_filter = 1
+layout_mode = 2
+
+[node name="Panel2" parent="." instance=ExtResource("1_6i0l6")]
+layout_mode = 2
+
+[node name="Panel3" parent="." instance=ExtResource("1_6i0l6")]
+layout_mode = 2

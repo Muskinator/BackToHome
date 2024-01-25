@@ -324,7 +324,7 @@ sources/2 = SubResource("TileSetAtlasSource_nd0h3")
 sources/3 = SubResource("TileSetAtlasSource_t1plk")
 sources/4 = SubResource("TileSetAtlasSource_6uin0")
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
