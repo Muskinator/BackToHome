@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cwsglqbs5jh7m"]
+[gd_scene load_steps=24 format=3 uid="uid://cwsglqbs5jh7m"]
 
 [ext_resource type="Texture2D" uid="uid://0fpcch7kvwcd" path="res://Background LVL/Background_essaie5.webp" id="1_enmfc"]
 [ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="2_y07bu"]
@@ -10,7 +10,6 @@
 [ext_resource type="Script" path="res://Scene/Levels/game_manager.gd" id="7_0fwbf"]
 [ext_resource type="Texture2D" uid="uid://d2bnx3jh1npg" path="res://Plateformes/plateforme_oreuh.webp" id="7_maxom"]
 [ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/Bouton/bouton_concept.tscn" id="8_3nj5p"]
-[ext_resource type="Script" path="res://Scene/Inventaire/Inventory.gd" id="10_b8f4i"]
 [ext_resource type="Texture2D" uid="uid://bfuo7knunh0uw" path="res://Assets/Inventory case.png" id="11_6lj6o"]
 [ext_resource type="PackedScene" uid="uid://dlgbmuqulq3lb" path="res://Scene/Objets/Objet_Fin_De_Lvl/Lvl3/lvl_portalFinal.tscn" id="11_olwdf"]
 [ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Assets/Inventory.png" id="12_o0in3"]
@@ -394,10 +393,10 @@ sources/7 = SubResource("TileSetAtlasSource_668jy")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = -2455.0
-offset_top = -2946.0
-offset_right = 5818.0
-offset_bottom = 1372.0
+offset_left = -2494.0
+offset_top = -2998.0
+offset_right = 5779.0
+offset_bottom = 1320.0
 texture = ExtResource("1_enmfc")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -462,13 +461,6 @@ vertical_alignment = 1
 position = Vector2(5130, -1901)
 
 [node name="UI inventory" type="CanvasLayer" parent="."]
-
-[node name="Inventory2" type="Control" parent="UI inventory"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("10_b8f4i")
 
 [node name="cases" type="Node" parent="UI inventory"]
 
