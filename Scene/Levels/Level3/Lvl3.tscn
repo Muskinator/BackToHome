@@ -499,3 +499,6 @@ vertical_alignment = 1
 [node name="Pique" parent="." instance=ExtResource("14_1s0hu")]
 position = Vector2(599, 315)
 scale = Vector2(2.35738, 2.37586)
+
+[node name="Collectable" parent="." instance=ExtResource("14_1s0hu")]
+position = Vector2(831, 467)
