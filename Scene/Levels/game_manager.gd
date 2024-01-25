@@ -2,7 +2,7 @@ extends Node
 
 @onready var hearts_label = %HeartsLabel
 
-var lives = 4
+var lives = 3
 
 func Lose_Life():
 	lives -= 1
@@ -10,5 +10,6 @@ func Lose_Life():
 		get_tree().reload_current_scene()
 	else :
 		print(lives)
-		hearts_label.text = str(lives)
+		hearts_label.text = "Hearts : "+ str(lives)
+	
 	

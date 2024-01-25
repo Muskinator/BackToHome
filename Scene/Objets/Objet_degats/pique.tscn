@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dmn6yd877sk0g"]
+[gd_scene load_steps=35 format=3 uid="uid://dmn6yd877sk0g"]
 
 [ext_resource type="Script" path="res://Scene/Objets/Objet_degats/pique.gd" id="1_n2vcw"]
 [ext_resource type="Texture2D" uid="uid://cm7ul7ruu57f0" path="res://Assets/encre.png" id="2_f4bs2"]
@@ -224,23 +224,21 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_e3xaf"]
-radius = 24.0208
-
 [node name="Collectable" type="Area2D"]
 scale = Vector2(2.375, 2.40082)
 script = ExtResource("1_n2vcw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(2, -18)
-scale = Vector2(1.51843, 1.48375)
+position = Vector2(0.8421, -3.3322)
+scale = Vector2(0.39711, 0.367003)
 sprite_frames = SubResource("SpriteFrames_ujscq")
 animation = &"pique"
 autoplay = "pique"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -15)
-shape = SubResource("CircleShape2D_e3xaf")
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0.842106, -1.6661)
+scale = Vector2(0.221415, 0.224515)
+polygon = PackedVector2Array(0.421053, 8.22636, 27.7895, 8.64288, -0.421053, -34.2591, -26.5263, 7.80983)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
