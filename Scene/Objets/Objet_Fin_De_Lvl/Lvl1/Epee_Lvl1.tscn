@@ -4,19 +4,19 @@
 [ext_resource type="Texture2D" uid="uid://bubon1s7o66mk" path="res://Assets/armeSeule.png" id="2_njdwp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ex4u2"]
-size = Vector2(215.5, 186.875)
+size = Vector2(88, 79)
 
 [node name="Épée_lvl1" type="Area2D"]
 script = ExtResource("1_ljxr6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-7.00002, 22)
-scale = Vector2(6.58, 5.9075)
+position = Vector2(-8.00002, 18)
+scale = Vector2(4.02, 3.56)
 texture = ExtResource("2_njdwp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, -3)
+position = Vector2(3, -8.5)
 shape = SubResource("RectangleShape2D_ex4u2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
