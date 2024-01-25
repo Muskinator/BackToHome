@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://biwp18nuukgcj"]
+[gd_scene load_steps=13 format=3 uid="uid://biwp18nuukgcj"]
 
 [ext_resource type="Script" path="res://Scene/Objets/collectable.gd" id="1_inhh0"]
 [ext_resource type="Texture2D" uid="uid://bfrufrgllasqj" path="res://Assets/bois.png" id="2_gym74"]
+[ext_resource type="AudioStream" uid="uid://dpi85nvskuxvv" path="res://Scene/Sound/loot.wav" id="3_r3oue"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ub8t"]
 atlas = ExtResource("2_gym74")
@@ -76,5 +77,8 @@ autoplay = "default"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -2)
 shape = SubResource("CircleShape2D_e3xaf")
+
+[node name="Collected" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_r3oue")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

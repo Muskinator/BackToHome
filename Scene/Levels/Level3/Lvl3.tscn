@@ -10,9 +10,9 @@
 [ext_resource type="Script" path="res://Scene/Levels/game_manager.gd" id="7_0fwbf"]
 [ext_resource type="Texture2D" uid="uid://d2bnx3jh1npg" path="res://Plateformes/plateforme_oreuh.webp" id="7_maxom"]
 [ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/Bouton/bouton_concept.tscn" id="8_3nj5p"]
-[ext_resource type="PackedScene" uid="uid://dlgbmuqulq3lb" path="res://Scene/lvl_Final.tscn" id="9_42pto"]
 [ext_resource type="Script" path="res://Scene/Inventaire/Inventory.gd" id="10_b8f4i"]
 [ext_resource type="Texture2D" uid="uid://bfuo7knunh0uw" path="res://Assets/Inventory case.png" id="11_6lj6o"]
+[ext_resource type="PackedScene" uid="uid://dlgbmuqulq3lb" path="res://Scene/Autres/lvl_Final.tscn" id="11_olwdf"]
 [ext_resource type="Texture2D" uid="uid://b7mthj8so5uw3" path="res://Assets/Inventory.png" id="12_o0in3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
@@ -444,7 +444,7 @@ vertical_alignment = 1
 
 [node name="Bouton_Concept" parent="." instance=ExtResource("8_3nj5p")]
 
-[node name="Lvl_Portal" parent="." instance=ExtResource("9_42pto")]
+[node name="Lvl_Portal" parent="." instance=ExtResource("11_olwdf")]
 position = Vector2(5130, -1901)
 
 [node name="UI inventory" type="CanvasLayer" parent="."]

@@ -11,10 +11,14 @@ config_version=5
 [application]
 
 config/name="Back_to_home"
-run/main_scene="res://Scene/Pages_Utilisateur/main_level.tscn"
+run/main_scene="res://Scene/Levels/Level1/Lvl1.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 <<<<<<<HEADrun/main_scene="res://Scene/main_menu.tscn"
+
+[autoload]
+
+GlobalAudioStreamPlayer="*res://Scene/Sound/audio_stream_player.tscn"
 
 [input]
 

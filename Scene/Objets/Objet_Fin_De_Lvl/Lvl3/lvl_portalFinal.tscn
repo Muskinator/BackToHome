@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dlgbmuqulq3lb"]
 
-[ext_resource type="Script" path="res://Scene/lvl_portal_tuto.gd" id="1_j4e2l"]
+[ext_resource type="Script" path="res://Scene/Autres/lvl_portal_tuto.gd" id="1_j4e2l"]
 [ext_resource type="Texture2D" uid="uid://b2e2deap6td21" path="res://Assets/portailfinal.png" id="2_7r1iv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ex4u2"]

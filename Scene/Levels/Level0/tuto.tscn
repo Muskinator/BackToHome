@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dt26ors8wl3fh" path="res://Assets/plateformes.webp" id="4_uksbg"]
 [ext_resource type="Texture2D" uid="uid://c0krfcx5cqrsa" path="res://Assets/Plate_violet.webp" id="5_ut3gh"]
 [ext_resource type="Texture2D" uid="uid://v5yp0aeb4ra4" path="res://Assets/dirt-violet.webp" id="6_n0mf3"]
-[ext_resource type="PackedScene" uid="uid://dcsieev058iy2" path="res://Scene/lvl_portal_final.tscn" id="7_ulysj"]
+[ext_resource type="PackedScene" uid="uid://dcsieev058iy2" path="res://Scene/Autres/lvl_portal_final.tscn" id="7_ulysj"]
 [ext_resource type="PackedScene" uid="uid://bkfl82ewu45if" path="res://Scene/Bouton/bouton_concept.tscn" id="9_ow3gx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]

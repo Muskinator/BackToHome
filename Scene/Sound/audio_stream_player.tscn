@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm2nfmnh7ckri"]
+
+[ext_resource type="AudioStream" uid="uid://dfxdhpaesakvi" path="res://Scene/Sound/Sound_map.mp3" id="1_vwu3e"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_vwu3e")
+volume_db = -25.66
+autoplay = true
