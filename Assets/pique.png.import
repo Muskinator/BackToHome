@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boofvst6dh3fl"
-path="res://.godot/imported/degat.png-a0b381c20947c52ae345e7cec7ef507c.ctex"
+path="res://.godot/imported/pique.png-7d36bad4217934163580d90f51f2cbf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/degat.png"
-dest_files=["res://.godot/imported/degat.png-a0b381c20947c52ae345e7cec7ef507c.ctex"]
+source_file="res://Assets/pique.png"
+dest_files=["res://.godot/imported/pique.png-7d36bad4217934163580d90f51f2cbf4.ctex"]
 
 [params]
 

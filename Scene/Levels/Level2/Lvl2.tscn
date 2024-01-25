@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://ytq4l5q6y7lq"]
+[gd_scene load_steps=24 format=3 uid="uid://ytq4l5q6y7lq"]
 
 [ext_resource type="Texture2D" uid="uid://bdpsdrverkkmx" path="res://Background LVL/background-essaie.webp" id="1_3k8sn"]
 [ext_resource type="Texture2D" uid="uid://b4jdxa8lki3bj" path="res://Tiles/plateforme_terre.png" id="2_lo7ba"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bnk2vbnn5owne" path="res://Scene/Objets/encre.tscn" id="12_3umq4"]
 [ext_resource type="PackedScene" uid="uid://cwf41dq8hcr5b" path="res://Scene/Objets/page.tscn" id="13_bs5t6"]
 [ext_resource type="PackedScene" uid="uid://bcnvs21rn6ali" path="res://Scene/Levels/Level2/character_body_2d_Lvl2.tscn" id="14_1db8j"]
+[ext_resource type="PackedScene" uid="uid://dmn6yd877sk0g" path="res://Scene/Objets/Objet_degats/pique.tscn" id="17_ta2s2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ao551"]
 texture = ExtResource("2_lo7ba")
@@ -446,3 +447,18 @@ position = Vector2(231, 385)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-6, -10)
+
+[node name="Collectable4" parent="." instance=ExtResource("17_ta2s2")]
+position = Vector2(3323, -1200)
+
+[node name="Collectable5" parent="." instance=ExtResource("17_ta2s2")]
+position = Vector2(3272, -1200)
+
+[node name="Collectable6" parent="." instance=ExtResource("17_ta2s2")]
+position = Vector2(1566, -1840)
+
+[node name="Collectable7" parent="." instance=ExtResource("17_ta2s2")]
+position = Vector2(1617, -1840)
+
+[node name="Collectable8" parent="." instance=ExtResource("17_ta2s2")]
+position = Vector2(1668, -1840)
